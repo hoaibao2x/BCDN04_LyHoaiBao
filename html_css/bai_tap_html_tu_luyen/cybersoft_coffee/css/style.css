@@ -1,0 +1,38 @@
+.big-title {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+}
+.my-hr {
+    height: 5px;
+
+}
+.small-title {
+    text-align: center;
+}
+.coffe-des {
+    color: #a52a2a;
+}
+.tea-des {
+    text-align: right;
+    color: #0000ff;
+}
+.my-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.coffee-name1 {
+    background-color: #ee82ee;
+}
+.coffee-name2 {
+    background-color: #008000;
+    text-align: right;
+}
+.coffee-name3 {
+    background-color: #ffd700;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
