@@ -192,9 +192,7 @@ html, body {
     background-color: white;
 }
 .post__left .post__item hr {
-    margin: 15px 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto 15px;
     width: 95%;
 }
 .post__item .post__card .card__left {
