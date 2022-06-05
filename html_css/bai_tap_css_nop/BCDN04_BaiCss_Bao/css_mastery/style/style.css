@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     color: black;
 }
+
 .clear {
     clear: both;
 }
@@ -16,32 +19,47 @@ html, body {
     padding: 10px;
     background-color: white;
 }
-.header__top, .header__bottom {
-    margin:auto;
+
+.header__top,
+.header__bottom {
+    margin: auto;
     width: 80%;
 }
-.header__top img {
-    width: 50px;
-    position: relative;
-}
+
 .header__top span {
-    position: absolute;
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: black;
 }
+
+.header__top i {
+    font-size: 1rem;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #002146;
+    border-radius: 35px;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #002146;
+    color: #fdc800;
+}
+
 .header ul {
     list-style: none;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
+
 .header ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 25px;
+    font-size: 1.25rem;
 }
+
 .header ul li a {
     text-decoration: none;
     color: black;
 }
+
 .header ul li a:hover {
     color: gray;
 }
@@ -50,7 +68,7 @@ html, body {
 .carousel {
     background: url('../img/2.jpg');
     background-color: white;
-    height: 520px;
+    height: 650px;
     background-position: top;
     background-size: cover;
     margin: 10px 0 50px;
@@ -61,55 +79,72 @@ html, body {
     width: 80%;
     margin: auto;
 }
-.infor__left, .infor__right {
+
+.infor__left,
+.infor__right {
     float: left;
     width: 50%;
     padding: 10px;
 }
+
 .infor__left .infor__card h3 {
-    font-size: 24px;
+    font-size: 2rem;
 }
+
 .infor__left .infor__card p {
     margin: 20px 0;
+    font-size: 1.15rem;
     color: gray;
 }
+
 .infor__left .infor__card button {
     padding: 15px 30px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 700;
     background-color: #fdc800;
+    color: #001c47;
     border-radius: 5px;
-    border: none;
+    border: #fdc800;
 }
+
 .infor__left .infor__card button:hover {
     cursor: pointer;
 }
+
 .infor__right img {
     width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
 }
 
 /* ACHIEVEMENT  */
 .achievement {
     margin: 30px 0;
-    padding: 50px;
+    padding: 80px;
     background-color: #f6f6f6;
     color: black;
 }
+
 .achievement__item {
     float: left;
     width: 25%;
     padding-left: 80px;
 }
-.achievement__number, .achievement__title {
+
+.achievement__number,
+.achievement__title {
     float: left;
 }
+
 .achievement__number h3 {
-    font-size: 40px;
+    font-size: 3.5rem;
 }
+
 .achievement__title p {
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-top: 8px;
     padding-left: 5px;
-    line-height: 18px;
+    line-height: 25px;
 }
 
 /* SERVICES  */
@@ -120,28 +155,34 @@ html, body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .services__item {
     float: left;
     width: 25%;
     padding: 10px;
 }
+
 .services__card {
     text-align: center;
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
     color: white;
     background-color: #002146;
     border-radius: 5px;
 }
+
 .services__card:hover {
     cursor: pointer;
 }
+
 .services__card i {
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: 2.5rem;
+    margin-top: 35px;
 }
+
 .services__card h4 {
-    margin-top: 20px;
+    margin-top: 25px;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 /* POST  */
@@ -149,13 +190,18 @@ html, body {
     background-color: #f6f6f6;
     padding: 80px 0;
 }
+
 .post__main {
     margin: auto;
     width: 80%;
 }
-.post__main .post__left h2, .post__main .post__right h2 {
+
+.post__main .post__left h2,
+.post__main .post__right h2 {
     margin-bottom: 30px;
+    font-size: 2rem;
 }
+
 .post__main button {
     float: right;
     padding: 15px 30px;
@@ -164,136 +210,184 @@ html, body {
     border-radius: 5px;
     border: none;
 }
+
 .post__main button:hover {
     cursor: pointer;
 }
-.post__left, .post__right {
+
+.post__left,
+.post__right {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 10px;
 }
-.post__left button, .post__right button {
+
+.post__left button,
+.post__right button {
+    font-size: 1rem;
     float: right;
     padding: 15px 30px;
     font-weight: bold;
     background-color: #fdc800;
     border-radius: 5px;
     border: none;
-    margin-top: 15px;
+    margin-top: 20px;
 }
+
 .post__card .card__right .card__time {
     color: #8c8c8c;
     margin: 8px 0;
 }
-.post__card .card__right .card__time, .post__card .card__right p {
-    font-size: 14px;
+
+.post__card .card__right .card__time,
+.post__card .card__right p {
+    font-size: 1rem;
 }
+
 .post__left .post__item {
     background-color: white;
 }
+
 .post__left .post__item hr {
     margin: 15px auto 15px;
     width: 95%;
 }
+
+.post__item .post__card,
+.post__right .event__1 .event__card {
+    padding: 10px;
+}
+
 .post__item .post__card .card__left {
     float: left;
     width: 30%;
     padding: 10px;
 }
+
 .post__item .post__card .card__right {
     float: left;
     width: 70%;
     padding: 8px;
 }
+
 .post__item .post__card .card__left img {
     width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
+
 .event__card .card__left {
     text-align: center;
     float: left;
     width: 25%;
     padding: 10px 10px 30px 10px;
 }
+
 .event__card .card__left .card__top {
     background-color: #fdc800;
-    padding: 9px 9px; 
+    padding: 9px 9px;
     line-height: 25px;
     border-radius: 5px 5px 0 0;
 }
+
 .card__left .card__top .event__day {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
+
 .event__card .card__left .card__bottom {
     background-color: #002146;
-    padding: 9px 9px; 
+    padding: 9px 9px;
     color: white;
     border-radius: 0 0 5px 5px;
 }
+
 .event__card .card__right {
     float: left;
     width: 75%;
     padding: 10px 40px 2px 0;
 }
+
 .event__card .card__right p {
     text-align: justify;
 }
-.event__card .card__right p, .event__card .card__right ul {
-    font-size: 14px;
+
+.event__card .card__right ul {
     list-style: none;
+    font-size: 1rem;
 }
+
 .event__card .card__right p {
     margin: 18px 0;
+    font-size: 1rem;
 }
+
 .event__card .card__right ul li {
     display: inline;
     color: #00193f;
     font-weight: bold;
 }
-.post__right .event__1, .event__2 .card__left, .event__2 .card__right {
+
+.post__right .event__1,
+.event__2 .card__left,
+.event__2 .card__right {
     background-color: white;
 }
+
 .post__right .event__2 {
-    margin-top: 15px;
+    background-color: white;
+    margin-top: 10px;
 }
 
+.card__right h4 {
+    font-size: 1.2rem;
+}
+
+
 /* FOOTER  */
-.footer, .footer a {
+.footer,
+.footer a {
     background-color: #002146;
     color: white;
 }
-.footer ul li, .footer .footer__cpr {
-    font-size: 14px;
-}
+
+
 .footer__list {
     margin: auto;
-    width: 80%;
+    width: 79%;
     padding: 50px 0;
 }
+
 .footer__list .footer__item {
     float: left;
     width: 33.33%;
     /* padding: 0 15px; */
 }
+
 .footer__item h2 {
     margin-bottom: 15px;
 }
+
 .footer__item ul li {
     list-style-type: none;
     margin: 10px 0;
+    font-size: 1.1rem;
 }
+
 .footer__item ul li a {
     text-decoration: none;
 }
+
 .footer__item ul li a:hover {
     color: #ffd900;
 }
+
 .footer__item ul li i {
     font-size: 10px;
     margin-right: 20px;
     color: #ffd900;
 }
+
 .footer .footer__hr {
     margin: 30px 0;
 }
