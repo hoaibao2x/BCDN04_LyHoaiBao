@@ -1,0 +1,114 @@
+/* GLOBAL  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HEADER */
+.header__top {
+    background-color: #ff4f81;
+    font-size: 14px;
+}
+
+.header__left a {
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.header__left a:hover {
+    color: black !important;
+}
+
+.header__right a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 0.25rem;
+    background-color: black;
+    border: 1px solid black;
+    transition: all .5s;
+}
+
+.header__right a:hover {
+    background-color: #ff4f81;
+    border: 1px solid white;
+}
+
+.navInstruction a {
+    color: black;
+}
+
+.navInstruction .navbar-brand p:first-child {
+    font-size: 36px;
+}
+
+.navInstruction .navbar-brand p:first-child i {
+    transform: skewX(-10deg);
+}
+
+.navInstruction .navbar-brand p:last-child {
+    font-size: 11px;
+    color: #ff4f81;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#navbarInstruction .nav-item {
+    margin: 0 15px;
+}
+
+#navbarInstruction .nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff4f81;
+    transition: all .5s;
+}
+
+#navbarInstruction .nav-item:hover::after {
+    width: 100%;
+}
+
+#navbarInstruction .nav-link {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+#navbarInstruction .nav-item:hover .nav-link {
+    color: #ff4f81;
+}
+
+#navbarInstruction .nav-item.active .nav-link {
+    color: #ff4f81;
+}
+
+#navbarInstruction .nav-item.active::after {
+    width: 100%;
+}
+
+#navbarInstruction .nav-item .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#navbarInstruction .dropdown-menu .dropdown-item {
+    /* background-color: transparent; */
+    color: white;
+    transition: all .5s;
+}
+
+#navbarInstruction .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: #ff4f81;
+}

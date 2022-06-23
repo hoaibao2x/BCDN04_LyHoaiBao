@@ -1,0 +1,252 @@
+/* GLOBAL  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+/* HEADER  */
+header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#portNavbar .nav-item {
+    margin: 0 10px;
+}
+
+#portNavbar .active a {
+    color: #35a22c;
+}
+
+#portNavbar .active .nav-link::after {
+    width: 100%;
+}
+
+#portNavbar .nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #35a22c;
+    display: block;
+    transition: all .5s;
+}
+
+#portNavbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/* CAROUSEL  */
+.portAvatar {
+    width: 140px;
+    border-radius: 50%;
+}
+
+#portCarouselID .carousel-item {
+    height: 100vh;
+
+}
+
+#portCarouselID .carousel-item>img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+#portCarouselID .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portCarouselID .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+#portCarouselID .carousel-indicators li.active {
+    background-color: #35a22c;
+}
+
+/* PROJECT */
+.portProject .nav {
+    justify-content: center;
+}
+
+
+/* SERVICE */
+.portService {
+    height: 100vh;
+    padding-top: 110px;
+    position: relative;
+    text-align: center;
+}
+
+.portService::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/3.jpg');
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(65%);
+}
+
+.service__title {
+    position: relative;
+}
+
+.service__title h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+
+.service__title p {
+    margin: 20px 0 45px;
+    color: white;
+}
+
+.service__item {
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, .18);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+
+.service__item:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.service__item i {
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.service__item .card-body {
+    color: white;
+}
+
+.service__item h4 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+.service__item p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* AWARD */
+/* .award__right img {
+    width: 100%;
+} */
+
+.portAward {
+    padding: 100px 0;
+    position: relative;
+}
+
+.portAward__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/memphis_3.png');
+    background-position: bottom left;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+.portAward .award__left {
+    background: rgba(255, 255, 255, .25);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 10px;
+    padding: 45px;
+    backdrop-filter: blur(6px);
+}
+
+/* FOOTER */
+footer {
+    color: #aaa;
+    background-color: #222;
+    padding: 50px 0;
+}
+
+.footer__top a,
+.footer__bottom a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer__top a:hover,
+.footer__bottom a:hover {
+    color: #35a22c;
+}
+
+.footer__top i {
+    font-size: 16px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #454545;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+.footer__top i:hover {
+    border: 1px solid #35a22c;
+}
+
+footer hr {
+    border: 0.15px ridge gray;
+    margin: 30px 0;
+}
+
+.footer__bottom p {
+    font-size: 16px;
+}
+
+/* HEADER RESPONSIVE */
+@media screen and (max-width: 992px) {
+
+    /* HEADER */
+    header .navbar-toggler {
+        background-color: #35a22c;
+    }
+
+    /* CAROUSEL */
+    header .navbar-nav {
+        background-color: white;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #35a22c;
+    }
+
+}
+
+/* END HEADER RESPONSIVE */
